@@ -17,15 +17,21 @@
             justify-content: center;
             height: 100vh;
             overflow: hidden;
+            position: relative; /* Добавлено для правильного позиционирования кнопки */
         }
 
         .container {
             text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центрирует содержимое по вертикали */
+            align-items: center;
         }
 
         .gif-container {
-            width: 100px;
-            height: 100px;
+            width: 150px; /* Увеличил размер GIF */
+            height: 150px;
             margin: 0 auto;
         }
 
@@ -36,31 +42,31 @@
         }
 
         .title {
-            font-size: 20px;
-            margin-top: 10px;
+            font-size: 24px; /* Увеличил размер шрифта */
+            margin-top: 20px;
         }
 
         .stars-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
         .stars-container .count {
-            font-size: 36px;
+            font-size: 40px; /* Увеличил размер числа */
             color: #4CAF50; /* Зеленый цвет текста */
-            margin-right: 5px;
+            margin-right: 10px;
         }
 
         .stars-container img {
-            width: 36px;
-            height: 36px;
+            width: 40px; /* Увеличил размер звезды */
+            height: 40px;
         }
 
         .message {
-            font-size: 16px;
-            margin-top: 5px;
+            font-size: 18px; /* Увеличил размер шрифта */
+            margin-top: 10px;
         }
 
         .footer {
@@ -70,14 +76,19 @@
         }
 
         .button {
-            margin-top: 20px;
-            padding: 10px 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
             background-color: #B39DDB;
             color: black;
             border: none;
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 50px; /* Полностью закругленные края */
+            font-size: 18px; /* Увеличил размер шрифта */
+            text-align: center;
             cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Легкая тень */
         }
 
         .button:hover {
@@ -97,7 +108,7 @@
         </div>
         <div class="message">Вы получили 100000 Telegram Stars от Алекс Астеро.</div>
         <div class="footer">Звёзды будут зачислены на ваш баланс Telegram Stars в ближайшее время.</div>
-        <button class="button">Закрыть</button>
     </div>
+    <button class="button">Закрыть</button>
 </body>
 </html>
