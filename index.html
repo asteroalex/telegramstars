@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарок Получен</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .gif-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .gif-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        .title {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .stars-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .stars-container .count {
+            font-size: 36px;
+            color: #4CAF50; /* Зеленый цвет текста */
+            margin-right: 5px;
+        }
+
+        .stars-container img {
+            width: 36px;
+            height: 36px;
+        }
+
+        .message {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #888888;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #B39DDB;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #9575CD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gif-container">
+            <img src="gift-box.gif" alt="Подарочная коробка">
+        </div>
+        <div class="title">Подарок получен</div>
+        <div class="stars-container">
+            <div class="count">+100000</div>
+            <img src="star-icon.png" alt="Звезда">
+        </div>
+        <div class="message">Вы получили 100000 Telegram Stars от Алекс Астеро.</div>
+        <div class="footer">Звёзды будут зачислены на ваш баланс Telegram Stars в ближайшее время.</div>
+        <button class="button">Закрыть</button>
+    </div>
+</body>
+</html>
